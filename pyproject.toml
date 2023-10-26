@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fast-api-college"
+version = "0.1.0"
+description = ""
+authors = ["Liel Peretz <lylp141@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+uvicorn = "^0.23.2"
+fastapi = "^0.104.0"
+sqlalchemy = "^2.0.22"
+sqlalchemy-utils = "^0.41.1"
+psycopg2-binary = "^2.9.9"
+pydantic = "^2.4.2"
+alembic = "^1.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
