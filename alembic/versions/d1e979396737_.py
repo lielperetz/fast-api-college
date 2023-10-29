@@ -37,7 +37,7 @@ def upgrade() -> None:
         sa.Column('role', sa.Enum('teacher', 'student', name='role'), nullable=True),
     )
 
-    with open(os.path.join(os.path.dirname(__file__), "..\data\students.json")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/students.json")) as f:
         student_data = f.read()
 
     op.bulk_insert(users, json.loads(student_data))
